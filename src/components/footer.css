@@ -1,0 +1,124 @@
+.footer {
+  height: 45vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 10px;
+}
+
+.h1 {
+  font-size: 3rem;
+}
+.input {
+  width: 50%;
+  font-size: 1.1rem;
+  background-color: rgb(69 69 69);
+  border: none;
+}
+.input::placeholder {
+  font-size: 1em;
+}
+.inner__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.textarea {
+  width: 100%;
+  height: 10vh;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+
+  resize: none;
+  background-color: rgb(69 69 69);
+  border: none;
+}
+.textarea,
+.input {
+  color: white;
+}
+.textarea::placeholder {
+  font-size: 1.5rem;
+}
+.textarea::placeholder,
+.input::placeholder {
+  color: white;
+  opacity: 0.3;
+  padding: 8px;
+}
+.textarea:focus,
+.input:focus {
+  background-color: rgb(69 69 69);
+  color: white;
+}
+
+.a {
+  text-decoration: none;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  font-size: 1.5em;
+  gap: 10px;
+}
+.a__href:hover {
+  transform: scale(1.1);
+}
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.contact__icon {
+  width: 50px;
+  height: 50px;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    min-height: 45vh;
+    height: auto;
+  }
+  .form {
+    margin-bottom: 20px;
+  }
+  .contact__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form > .button {
+    width: auto;
+  }
+}
+
+.button {
+  margin-top: 10px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 0 16px;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  border: 1px solid rgb(0, 188, 212);
+  color: rgb(0, 188, 212);
+  line-height: 30px;
+  font-weight: 400;
+  text-align: center;
+  width: 35%;
+  height: 40px;
+  font-size: 1rem;
+}
+.button:hover {
+  transform: scale(1.2);
+  background: rgb(0, 188, 212);
+  color: black;
+  transition: 0.2s ease;
+}
