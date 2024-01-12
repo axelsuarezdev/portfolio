@@ -41,18 +41,17 @@ module.exports = {
         use: [
           {
             loader: "file-loader",
-            options: { name: "[name].[ext]", outputPath: "../../dist/pdfs/" },
           },
         ],
       },
       {
-        // test: /\.pdf$/i,
-        // use: [
-        //   {
-        //     loader: "file-loader",
-        //     options: {},
-        //   },
-        // ],
+        test: /\.pdf$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {},
+          },
+        ],
       },
     ],
   },
