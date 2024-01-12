@@ -7,8 +7,6 @@ import { useRecoilState } from "recoil";
 import { Projects } from "../components/projects";
 import { Footer } from "../components/footer";
 
-import englishcv from "../components/cv/englishcv.pdf";
-import spanishcv from "../components/cv/españolcv.pdf";
 // Icons
 import { githubIcon, linkedinIcon, reactIcon } from "../hooks";
 
@@ -56,7 +54,11 @@ function Home() {
             </div>
             <a
               className={css.cv}
-              href={language === "es" ? spanishcv : englishcv}
+              href={
+                language === "es"
+                  ? "../../dist/pdfs/españolcv.pdf"
+                  : "../../dist/pdfs/englishcv.pdf"
+              }
               target="_blank"
               download
               rel="noopener noreferrer"
