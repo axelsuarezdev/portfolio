@@ -29,6 +29,15 @@ export function Footer() {
       return ifWhite;
     }
   };
+  const inputStyleWhite = {
+    color: "black",
+    backgroundColor: "#b5b5b5",
+  };
+  const inputStyleBlack = {
+    backgroundColor: "rgb(69 69 69)",
+    color: "white",
+  };
+
   const navigate = useNavigate();
   const currentLocation = `${window.location.origin}${window.location.pathname}`;
   console.log(currentLocation);
@@ -51,6 +60,7 @@ export function Footer() {
         </h1>
         <div className={css.inner__container}>
           <input
+            style={getCurrentTheme(inputStyleWhite, inputStyleBlack)}
             className={css.input}
             type="email"
             name="email"
@@ -58,6 +68,7 @@ export function Footer() {
             placeholder={getCurrentLanguage("Your email", "Tu email")}
           />
           <input
+            style={getCurrentTheme(inputStyleWhite, inputStyleBlack)}
             className={css.input}
             type="text"
             name="name"
@@ -71,6 +82,7 @@ export function Footer() {
         </div>
 
         <textarea
+          style={getCurrentTheme(inputStyleWhite, inputStyleBlack)}
           className={css.textarea}
           placeholder={getCurrentLanguage("Your message", "Tu mensaje")}
           name="message"

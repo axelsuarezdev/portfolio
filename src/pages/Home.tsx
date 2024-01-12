@@ -8,6 +8,7 @@ import { Projects } from "../components/projects";
 import { Footer } from "../components/footer";
 
 // Icons
+import "../../dist/pdfs/englishcv.pdf";
 import { githubIcon, linkedinIcon, reactIcon } from "../hooks";
 
 function Home() {
