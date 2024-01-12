@@ -1,7 +1,7 @@
 /* HOME */
 .main__container {
   width: 50%;
-  height: 66vh;
+  min-height: 66vh;
   display: flex;
   flex-direction: row;
   /* padding: 5vw; */
@@ -55,7 +55,7 @@
     padding-top: 50px;
   }
   .avatar {
-    width: 244px;
+    width: 200px;
   }
   .cv {
     width: 120px;
