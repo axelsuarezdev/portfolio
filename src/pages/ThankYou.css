@@ -6,24 +6,25 @@
   justify-content: center;
 }
 .button {
-  width: 150px;
   margin-top: 10px;
   display: inline-block;
   outline: none;
   cursor: pointer;
-  padding: 5px;
-  background-color: #fff;
+  padding: 0 16px;
+  background-color: transparent;
   border-radius: 0.25rem;
-  border: 1px solid #0070d2;
-  color: #0070d2;
-  font-size: 1.5rem;
+  border: 1px solid rgb(0, 188, 212);
+  color: rgb(0, 188, 212);
+  font-size: 1em;
   line-height: 30px;
   font-weight: 400;
   text-align: center;
+  width: 50%;
+  height: 40px;
 }
 .button:hover {
   transform: scale(1.2);
-  background: #0070d2;
+  background: rgb(0, 188, 212);
   color: white;
   transition: 0.2s ease;
 }
