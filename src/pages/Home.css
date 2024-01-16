@@ -2,6 +2,7 @@
 .main__container {
   border-radius: 40px;
   width: 20%;
+  min-width: 277px;
   min-height: 50vh;
   display: flex;
   flex-direction: column;
@@ -42,7 +43,7 @@
 }
 .avatar {
   align-self: center;
-  width: 360px;
+  width: 100%;
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
