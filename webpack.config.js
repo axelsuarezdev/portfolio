@@ -37,22 +37,25 @@ module.exports = {
         ],
       },
       {
-        test: /\.(pdf|png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|pdf)$/i,
         use: [
           {
             loader: "file-loader",
           },
         ],
       },
-      {
-        test: /\.pdf$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {},
-          },
-        ],
-      },
+      // {
+      //   test: /\.pdf$/,
+      //   use: [
+      //     {
+      //       loader: "file-loader",
+      //       options: {
+      //         name: "[name].[ext]",
+      //         outputPath: "pdfs/",
+      //       },
+      //     },
+      //   ],
+      // },
     ],
   },
   resolve: {

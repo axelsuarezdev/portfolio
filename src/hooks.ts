@@ -73,6 +73,7 @@ import freelance_club360 from "./components/project-photos/freelance_club360.png
 import freelance_nico from "./components/project-photos/freelance_nico.png";
 import freelance_ricky from "./components/project-photos/freelance_ricky.png";
 import freelance_emigrar from "./components/project-photos/freelance_emigrar.png";
+
 export {
   toDoList,
   APIConsumption,
@@ -89,9 +90,7 @@ export const languageText = {
       myProjects: "Mis projectos",
     },
     home: {
-      greetings: "Hola,",
-      presentation: "Soy Axel",
-      whatIdo: "Soy un Desarrollador Web",
+      whatIdo: "Desarrollador Web",
       career: {
         presentationCard:
           "Familiarizado en el ámbito de la programación en general desde 2016 gracias a la escuela, ya hace 2 años encontré mi pasión por el Desarrollo Web, ya con 2 años de experiencia de usar herramientas Fullstack, estoy actualmente trabajando con React y Typescript, realizando y colaborando en proyectos, y estoy entusiasmado por seguir contribuyendo a estos siempre con una mirada positiva, y siempre encantado con los desafíos que expanden el horizonte de un programador y hacer cosas increíbles.",
@@ -134,9 +133,7 @@ export const languageText = {
       myProjects: "My projects",
     },
     home: {
-      greetings: "Hi,",
-      presentation: "I'm Axel",
-      whatIdo: "I'm a Web Developer",
+      whatIdo: "Web developer",
       career: {
         presentationCard:
           "Introduced to the programming field in general since 2016, thanks to school, two years ago, I discovered my passion for Web Development. With 2 years of experience using Fullstack tools, I am currently working with React and Typescript, participating in and collaborating on projects. I am enthusiastic about continuing to contribute to these endeavors, always with a positive perspective, and consistently excited about challenges that broaden a programmer's horizons, enabling the creation of amazing things.",
