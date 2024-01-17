@@ -6,7 +6,8 @@ import { languageText, languageAtom, themeAtom } from "../hooks";
 import { useRecoilState } from "recoil";
 import { Projects } from "../components/projects";
 import { Footer } from "../components/footer";
-
+import EnglishCv from "../components/cv/englishcv.pdf";
+import EspanolCv from "../components/cv/españolcv.pdf";
 // Icons
 import { githubIcon, linkedinIcon, reactIcon } from "../hooks";
 
@@ -17,10 +18,7 @@ function Home() {
     color: theme === "dark" ? "#fff" : "black",
   };
   const handleDownloadCV = () => {
-    const cvUrl =
-      language === "es"
-        ? "../components/cv/españolcv.pdf"
-        : "../components/cv/englishcv.pdf";
+    const cvUrl = language === "es" ? EspanolCv : EnglishCv;
     window.open(cvUrl, "_blank");
   };
   return (
@@ -67,18 +65,19 @@ function Home() {
               </span>
             </button>
             {/* <a
-            className={css.cv}
-            href={
-              language === "es"
-                ? "../../dist/pdfs/españolcv.pdf"
-                : "../../dist/pdfs/englishcv.pdf"
-            }
-            target="_blank"
-            download
-            rel="noopener noreferrer"
-          >
-            {language === "es" ? "Descargar CV" : "Download CV"}
-          </a> */}
+              className={css.cv}
+              href="../components/cv/CV_Ricardo_Vitali_Espanol.pdf"
+              // href={
+              //   language === "es"
+              //     ? "../../dist/pdfs/españolcv.pdf"
+              //     : "../../dist/pdfs/englishcv.pdf"
+              // }
+              target="_blank"
+              download
+              rel="noopener noreferrer"
+            >
+              {language === "es" ? "Descargar CV" : "Download CV"}
+            </a> */}
           </div>
         </div>
       </div>

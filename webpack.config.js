@@ -2,8 +2,8 @@ const path = require("path");
 const dev = process.env.NODE_ENV == "development";
 
 const liveServer = require("live-server");
-// const webpack = require("webpack");
 
+// Start live-server in development mode
 if (dev) {
   liveServer.start({
     root: "./",
@@ -13,7 +13,6 @@ if (dev) {
 
 module.exports = {
   watch: dev,
-  //   mode: "development",
   entry: "./src/index.tsx",
   module: {
     rules: [
@@ -38,24 +37,11 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|pdf)$/i,
-        use: [
-          {
-            loader: "file-loader",
-          },
-        ],
+        type: "asset/resource",
+        generator: {
+          filename: "assets/[name][ext]", // Outputs files in 'assets' directory
+        },
       },
-      // {
-      //   test: /\.pdf$/,
-      //   use: [
-      //     {
-      //       loader: "file-loader",
-      //       options: {
-      //         name: "[name].[ext]",
-      //         outputPath: "pdfs/",
-      //       },
-      //     },
-      //   ],
-      // },
     ],
   },
   resolve: {
