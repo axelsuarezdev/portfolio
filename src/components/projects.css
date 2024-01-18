@@ -29,7 +29,8 @@
   font-weight: 400;
   text-align: center;
   width: 50%;
-  height: 40px;
+  height: auto;
+  min-height: 40px;
 }
 .project__version:hover {
   transform: scale(1.2);
