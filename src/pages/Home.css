@@ -12,11 +12,15 @@
   justify-content: space-around;
   /* border-bottom: 3px solid rgb(0, 188, 212); */
   margin: 0 auto 50px auto;
-  padding-top: 125px;
+  padding-top: 85px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* Flip card content */
+  
 }
+/* Flip card content */
 
+/* Flip card content - END*/
 .main__container_titles {
   display: flex;
   flex-direction: column;

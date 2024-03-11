@@ -163,7 +163,8 @@ function Projects() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {getCurrentProjectContent(
+              {/* OPTIMIZACION: Que devuelva todo */}
+            {
               [
                 ppt_singeplayer_menu,
                 ppt_singleplayer_play,
@@ -171,7 +172,11 @@ function Projects() {
                 ppt_singleplayer_win,
                 ppt_singleplayer_draw,
                 ppt_singleplayer_lose,
-              ],
+              ].map((img, index) => (
+                <img style={getCurrentProjectContent({display: "inherit"},{ display: "none"})} key={index} src={img} className={css.project__img} />
+              ))
+              }
+              {
               [
                 // REHACER LAS FOTOS DE PLAYING QUE LAS SAQUE PARA EL ORTO
                 // ppt_multiplayer_menu,
@@ -186,8 +191,8 @@ function Projects() {
                 // ppt_multiplayer_playing_4,
                 ppt_multiplayer_history,
               ]
-            ).map((img, index) => (
-              <img key={index} src={img} className={css.project__img} />
+            .map((img, index) => (
+              <img style={getCurrentProjectContent({display: "none"},{display: "inherit"})} key={index} src={img} className={css.project__img} />
             ))}
           </a>
         </section>

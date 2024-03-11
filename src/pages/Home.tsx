@@ -24,6 +24,7 @@ function Home() {
   return (
     <div className={css.container}>
       <div className={css.main__container}>
+        
         <img src={avatar} className={css.avatar} />
         <div className={css.main__container_titles}>
           <h2 className={css.h2} style={textStyle}>
@@ -46,7 +47,7 @@ function Home() {
               className={css.a}
               target="_blank"
               href="https://github.com/lechuza2013"
-            >
+              >
               {" "}
               <img src={githubIcon} className={css.contactIcon} />
             </a>
@@ -56,7 +57,7 @@ function Home() {
                 viewBox="0 0 384 512"
                 height="1em"
                 xmlns="http://www.w3.org/2000/svg"
-              >
+                >
                 <path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
               </svg>
               <span className={css.icon2}></span>
@@ -64,41 +65,9 @@ function Home() {
                 {language === "es" ? "Descargar CV" : "Download CV"}
               </span>
             </button>
-            {/* <a
-              className={css.cv}
-              href="../components/cv/CV_Ricardo_Vitali_Espanol.pdf"
-              // href={
-              //   language === "es"
-              //     ? "../../dist/pdfs/españolcv.pdf"
-              //     : "../../dist/pdfs/englishcv.pdf"
-              // }
-              target="_blank"
-              download
-              rel="noopener noreferrer"
-            >
-              {language === "es" ? "Descargar CV" : "Download CV"}
-            </a> */}
-          </div>
-        </div>
+                </div>
+          </div>  
       </div>
-
-      {/* <h1
-        className={css.h1}
-        style={{
-          color: theme === "dark" ? "white" : "black",
-          margin: "0 auto",
-        }}
-      >
-        {language === "es" ? "Sobre mí" : "About me"}
-      </h1>
-      <p
-        className={css.presentation}
-        style={{
-          color: theme === "dark" ? "white" : "black",
-        }}
-      >
-        {languageText[language].home.career.presentationCard}
-      </p> */}
       <h1
         className={css.h1}
         style={{
