@@ -46,7 +46,7 @@ function Home() {
             <a
               className={css.a}
               target="_blank"
-              href="https://github.com/lechuza2013"
+              href="https://github.com/axelsuarezdev"
               >
               {" "}
               <img src={githubIcon} className={css.contactIcon} />
