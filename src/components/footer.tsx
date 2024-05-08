@@ -108,9 +108,9 @@ export function Footer() {
           className={`${css.a} ${css.a__href}`}
           target="_blank"
           style={getCurrentTheme({ color: "black" }, { color: "white" })}
-          href="https://github.com/lechuza2013"
+          href="https://github.com/axelsuarezdev"
         >
-          lechuza2013
+          axelsuarezdev
           <img className={css.contact__icon} src={githubIcon} />
         </a>
         <a
