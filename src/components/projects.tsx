@@ -121,7 +121,7 @@ function Projects() {
           className={css.project__name}
           style={getThemeContent({ color: "black" }, { color: "white" })}
         >
-          Miniproject:{" "}
+          {language === "es" ? "Miniproyectos: " : "Miniprojects: "}
           <span style={{ color: "#00BCD4" }}>
             {getMiniProjectContent(
               languageText[language].projects.miniProjects.titles.toDoList,

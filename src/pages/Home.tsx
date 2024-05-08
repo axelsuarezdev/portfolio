@@ -75,7 +75,7 @@ function Home() {
           margin: "20vh auto 10vh auto",
         }}
       >
-        {language === "es" ? "Projectos" : "Projects"}
+        {language === "es" ? "Proyectos" : "Projects"}
       </h1>
       <Projects />
       <Footer />
