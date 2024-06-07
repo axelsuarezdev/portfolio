@@ -8,12 +8,15 @@ import {
   languageText,
   languageAtom,
   themeAtom,
-  toDoList,
-  APIConsumption,
   freelance_nico,
   freelance_club360,
   freelance_ricky,
   freelance_emigrar,
+  swpage_1,
+  swpage_2,
+  swpage_3,
+  swpage_4,
+  swpage_5,
 } from "../hooks";
 
 import css from "./projects.css";
@@ -48,6 +51,14 @@ import {
   javascriptIcon,
 } from "../hooks";
 
+// React Icons
+import { FaReact , FaCss3, FaHtml5, FaNodeJs  } from "react-icons/fa";
+{/* <FaReact /> */}
+{/* <FaCss3 /> */}
+import { SiTypescript, SiVercel, SiExpress  } from "react-icons/si";
+{/* <SiTypescript /> */}
+import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+{/* <RiTailwindCssFill /> */}
 function Projects() {
   const [language, setLanguage] = useRecoilState(languageAtom);
   const [theme, setTheme] = useRecoilState(themeAtom);
@@ -70,13 +81,13 @@ function Projects() {
     );
   };
   // Obtener un contenido u otro dependiendo del miniProjecto que se va a mostrar
-  const getMiniProjectContent = (toDoList, APIconsumption): any => {
-    if (miniProjects === true) {
-      return toDoList;
-    } else if (miniProjects === false) {
-      return APIconsumption;
-    }
-  };
+  // const getMiniProjectContent = (toDoList, APIconsumption): any => {
+  //   if (miniProjects === true) {
+  //     return toDoList;
+  //   } else if (miniProjects === false) {
+  //     return APIconsumption;
+  //   }
+  // };
   // Obtener un contenido u otro dependiendo de la versión del projecto PPT
   const getCurrentProjectContent = (
     singleplayerContent,
@@ -96,43 +107,50 @@ function Projects() {
       return ifDark;
     }
   };
+  const getLanguageContent = (ifSpanish, ifEnglish)=>{
+    if (language === "es"){
+      return(ifSpanish);
+    } else if (theme === "en"){
+      return ifEnglish
+    }
+  }
   return (
     /* Container principal con GRID
      Y cada projeto individual con flex. */
     <div className={css.container}>
       <div className={css.container__projects}>
         <section className={css.project__section}>
-          <a
-            className={css.a}
-            href={getMiniProjectContent(
-              "https://lechuza2013.github.io/ToDoList/",
-              "https://lechuza2013.github.io/Buscador-de-MercadoLibre/"
-            )}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={getMiniProjectContent(toDoList, APIConsumption)}
-              className={css.single__img}
-            />
+        <a className={css.a} 
+        href="https://swpage.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer">
+            {[
+              // FOTOS DE LOS TRABAJITOS FREELANCE
+              swpage_1,
+              swpage_2,
+              swpage_3,
+              swpage_4,
+              swpage_5
+            ].map((img, index) => (
+              <img
+                key={index}
+                src={img}
+                
+                className={css.project__img}
+                style={{ cursor: "pointer" }}
+              />
+            ))}
           </a>
         </section>
         <h3
           className={css.project__name}
           style={getThemeContent({ color: "black" }, { color: "white" })}
         >
-          {language === "es" ? "Miniproyectos: " : "Miniprojects: "}
+          {languageText[language].projects.swpage.title}{" "}
           <span style={{ color: "#00BCD4" }}>
-            {getMiniProjectContent(
-              languageText[language].projects.miniProjects.titles.toDoList,
-              languageText[language].projects.miniProjects.titles.apiConsumption
-            )}
+            {language === "es"? "Fuerza": "Force"}
           </span>
         </h3>
-
-        <button className={css.project__version} onClick={toggleMiniProject}>
-          {getMiniProjectContent("API CONSUMPTION", "TO-DO LIST")}
-        </button>
         <p
           className={css.project__description}
           style={getThemeContent(
@@ -140,15 +158,22 @@ function Projects() {
             { color: "#c4f7f5", backgroundColor: "#333131" }
           )}
         >
-          {languageText[language].projects.miniProjects.description}
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </p>
         <div className={css.project__tecnologies}>
-          {getMiniProjectContent(
-            [htmlIcon, css3Icon, javascriptIcon],
-            [htmlIcon, css3Icon, javascriptIcon, nodejsIcon]
-          ).map((icon, index) => (
-            <img key={index} src={icon} className={css.tecnologyIcon} />
-          ))}
+          <FaReact className={css.tecnologyIcon} style={{color: "rgb(0, 188, 212)"}} title="Reactjs"/>
+          <RiNextjsFill className={css.tecnologyIcon} style={getThemeContent({color: "black"},{color: "white"})} title="Nextjs"/>
+          <RiTailwindCssFill className={css.tecnologyIcon} style={{color: "rgb(56, 189, 248)"}} title="Tailwindcss"/>
+          <SiTypescript className={css.tecnologyIcon} style={{color: "#3178c6"}} title="TypeScript"/> 
+          <FaHtml5 className={css.tecnologyIcon} style={{color: "#FF5733"}} title="HTML5"/> 
+          <FaCss3 className={css.tecnologyIcon} style={{color: "#0277BD"}} title="CSS3"/>
+          <SiVercel className={css.tecnologyIcon} style={getThemeContent({color: "black"},{color: "white"})} title="Vercel"/>
+          <FaNodeJs className={css.tecnologyIcon} style={{color: "rgb(153 204 125)"}} title="Nodejs"/>
         </div>
       </div>
       {/* // PPT */}

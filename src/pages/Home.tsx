@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import css from "./Home.css";
-import avatar from "../components/photos/medited.jpg";
+import avatar from "../components/photos/medited.jpeg";
 import { languageText, languageAtom, themeAtom } from "../hooks";
 import { useRecoilState } from "recoil";
 import { Projects } from "../components/projects";

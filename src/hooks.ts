@@ -31,12 +31,12 @@ export {
   cellphoneIcon,
 };
 // Singleplayer photos
-import ppt_singeplayer_menu from "./components/project-photos/ppt1_menu.PNG";
-import ppt_singleplayer_play from "./components/project-photos/ppt1_play.png";
-import ppt_singleplayer_play_1 from "./components/project-photos/ppt1_play-1.png";
-import ppt_singleplayer_win from "./components/project-photos/ppt1-win.png";
-import ppt_singleplayer_lose from "./components/project-photos/ppt1-lose.png";
-import ppt_singleplayer_draw from "./components/project-photos/ppt1-draw.png";
+import ppt_singeplayer_menu from "./components/project-photos/ppt/ppt1_menu.PNG";
+import ppt_singleplayer_play from "./components/project-photos/ppt/ppt1_play.png";
+import ppt_singleplayer_play_1 from "./components/project-photos/ppt/ppt1_play-1.png";
+import ppt_singleplayer_win from "./components/project-photos/ppt/ppt1-win.png";
+import ppt_singleplayer_lose from "./components/project-photos/ppt/ppt1-lose.png";
+import ppt_singleplayer_draw from "./components/project-photos/ppt/ppt1-draw.png";
 export {
   ppt_singeplayer_menu,
   ppt_singleplayer_draw,
@@ -46,17 +46,17 @@ export {
   ppt_singleplayer_play_1,
 };
 // Multiplayer photos
-import ppt_multiplayer_entering_room from "./components/project-photos/ppt2_entering_room.png";
-// import ppt_multiplayer_menu from "./components/project-photos/ppt2_menu.PNG";
-// import ppt_multiplayer_register from "./components/project-photos/ppt2_register.png";
-import ppt_multiplayer_menu_2 from "./components/project-photos/ppt2_menu-2.png";
-import ppt_multiplayer_waiting_room from "./components/project-photos/ppt2_waiting_room.png";
-// import ppt_multiplayer_waiting_play from "./components/project-photos/ppt2_waiting_play.png";
-import ppt_multiplayer_playing_1 from "./components/project-photos/ppt2_playing-1.png";
-import ppt_multiplayer_playing_2 from "./components/project-photos/ppt2_playing-2.png";
-import ppt_multiplayer_playing_3 from "./components/project-photos/ppt2_playing-3.png";
-// import ppt_multiplayer_playing_4 from "./components/project-photos/ppt2_playing-4.png";
-import ppt_multiplayer_history from "./components/project-photos/ppt2_history.png";
+import ppt_multiplayer_entering_room from "./components/project-photos/ppt/ppt2_entering_room.png";
+// import ppt_multiplayer_menu from "./components/project-photos/ppt/ppt2_menu.PNG";
+// import ppt_multiplayer_register from "./components/project-photos/ppt/ppt2_register.png";
+import ppt_multiplayer_menu_2 from "./components/project-photos/ppt/ppt2_menu-2.png";
+import ppt_multiplayer_waiting_room from "./components/project-photos/ppt/ppt2_waiting_room.png";
+// import ppt_multiplayer_waiting_play from "./components/project-photos/ppt/ppt2_waiting_play.png";
+import ppt_multiplayer_playing_1 from "./components/project-photos/ppt/ppt2_playing-1.png";
+import ppt_multiplayer_playing_2 from "./components/project-photos/ppt/ppt2_playing-2.png";
+import ppt_multiplayer_playing_3 from "./components/project-photos/ppt/ppt2_playing-3.png";
+// import ppt_multiplayer_playing_4 from "./components/project-photos/ppt/ppt2_playing-4.png";
+import ppt_multiplayer_history from "./components/project-photos/ppt/ppt2_history.png";
 export {
   ppt_multiplayer_entering_room,
   ppt_multiplayer_history,
@@ -66,22 +66,24 @@ export {
   ppt_multiplayer_playing_3,
   ppt_multiplayer_waiting_room,
 };
-// MiniProjects & Freelance
-import toDoList from "./components/project-photos/ToDoList.png";
-import APIConsumption from "./components/project-photos/APIConsumption.png";
 import freelance_club360 from "./components/project-photos/freelance_club360.png";
 import freelance_nico from "./components/project-photos/freelance_nico.png";
 import freelance_ricky from "./components/project-photos/freelance_ricky.png";
 import freelance_emigrar from "./components/project-photos/freelance_emigrar.png";
 
 export {
-  toDoList,
-  APIConsumption,
   freelance_club360,
   freelance_nico,
   freelance_ricky,
   freelance_emigrar,
 };
+//swpage
+import swpage_1 from "./components/project-photos/swpage/swpage_home.PNG"
+import swpage_2 from "./components/project-photos/swpage/swpage_films.PNG"
+import swpage_3 from "./components/project-photos/swpage/swpage_film.PNG"
+import swpage_4 from "./components/project-photos/swpage/swpage_characters.PNG"
+import swpage_5 from "./components/project-photos/swpage/swpage_character.PNG"
+export {swpage_1, swpage_2, swpage_3, swpage_4, swpage_5}
 export const languageText = {
   es: {
     header: {
@@ -104,13 +106,10 @@ export const languageText = {
         description:
           "A lo largo de mi trayectoria como desarrollador fullstack, he realizado proyectos freelance que enriquecieron mi experiencia. Me especialicé en la creación de páginas de inicio para negocios, portfolios para otros desarrolladores y contribuí al backend de un proyecto en curso, creando endpoints con Express, Node.js y Firebase. Además, integré MercadoPago en dicho proyecto, añadiendo una capa adicional de funcionalidad y facilitando transacciones seguras. Estas experiencias no solo me permitieron aplicar mis habilidades técnicas, sino también aprender, desafiarme y superar mis límites como programador, puliendo mis habilidades con cada proyecto.",
       },
-      miniProjects: {
-        titles: {
-          toDoList: "To-Do List",
-          apiConsumption: "Consumo de API (MercadoLibre)",
-        },
+      swpage: {
+        title: "Registro de la",
         description:
-          "Un par de miniprojectos al principio de mis estudios para familiarizarme con las tecnologías, siendo una un To-Do List y con un poco de mecánica frontend con HTML, CSS & JavaScript, y el otro con un agregado de backend, consumiendo la API de MercadoLibre para luego en futuros proyectos comenzar a diseñar dichas API's. ",
+          "Este proyecto utiliza la API 'swapi.dev' para crear una biblioteca de información sobre Star Wars. Con Next.js, se automatiza y mejora el tiempo de carga de las páginas mediante GetStaticProps y GetStaticPaths. La aplicación se desarrolla con React.js, Next.js, Tailwind CSS, TypeScript, y Node.js. Se despliega en Vercel para un rendimiento óptimo y se gestiona el código en GitHub, asegurando una aplicación eficiente y escalable.",
       },
 
       ppt: {
@@ -147,13 +146,10 @@ export const languageText = {
         description:
           "Throughout my journey as a fullstack developer, I've taken on freelance projects that enriched my experience. I specialized in creating landing pages for businesses, portfolios for fellow developers, and contributed to the backend of an ongoing project, creating endpoints with Express, Node.js, and Firebase. Additionally, I integrated MercadoPago into this project, adding an extra layer of functionality and facilitating secure transactions. These experiences not only allowed me to apply my technical skills but also to learn, challenge myself, and push my limits as a programmer, refining my abilities with each project.",
       },
-      miniProjects: {
-        titles: {
-          toDoList: "To-Do List",
-          apiConsumption: "Consumption of MercadoLibre API",
-        },
+      swpage: {
+        title: "Registry of the",
         description:
-          "A couple of mini-projects at the beginning of my studies to get familiar with the technologies, one being a To-Do List with some frontend mechanics using HTML, CSS & JavaScript, and the other involving backend, consuming the MercadoLibre API, then in future projects, start designing such APIs.",
+          "This project uses the 'swapi.dev' API to create a library of information about Star Wars. With Next.js, page load times are automated and improved using GetStaticProps and GetStaticPaths. The application is developed with React.js, Next.js, Tailwind CSS, TypeScript, and Node.js. It is deployed on Vercel for optimal performance, and the code is managed on GitHub, ensuring an efficient and scalable application.",
       },
 
       ppt: {
