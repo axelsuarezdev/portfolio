@@ -158,12 +158,13 @@ function Projects() {
             { color: "#c4f7f5", backgroundColor: "#333131" }
           )}
         >
-          <ul>
+          {languageText[language].projects.swpage.description}
+          {/* <ul>
+            <li>{getLanguageContent("Consumo de la API", "")}</li>
             <li></li>
             <li></li>
             <li></li>
-            <li></li>
-          </ul>
+          </ul> */}
         </p>
         <div className={css.project__tecnologies}>
           <FaReact className={css.tecnologyIcon} style={{color: "rgb(0, 188, 212)"}} title="Reactjs"/>
