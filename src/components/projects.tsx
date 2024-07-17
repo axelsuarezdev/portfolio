@@ -183,7 +183,7 @@ function Projects() {
           <a
             className={css.a}
             href={getCurrentProjectContent(
-              "https://lechuza2013.github.io/desafio-final-mod5/",
+              "https://axelsuarezdev.github.io/desafio-final-mod5/",
               "https://piedrapapelotijerazo.onrender.com/"
             )}
             target="_blank"
